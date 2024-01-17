@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins|Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* ======== Base ========  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    transition: .3 linear;
+    
+}
+body, button {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+/* ======== Header ========  */
+#header {
+    /* position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* flex layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9%;
+    /* style */
+    background: hsla(230, 8%, 15%, .9);
+    backdrop-filter: saturate(180%) blur(16px);
+    -wwbkit-backdrop-filter: saturate(180%) blur(16px); 
+    box-shadow: 0 6px 4px hsla(0, 4%, 15%, .2);
+}
+
+/* logo */
+.logo {
+    color: aliceblue;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: hsla(0, 4%, 15%, .2);
+}
+.logo:hover {
+    color: hsl(29, 72%, 62%);
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 3px;
+}
+/* button */
+button[class=btn-contact] {
+    position: absolute;
+    right: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 9px 25px;
+    color: #edf0f1;
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button[class=btn-contact]:hover {
+    background-color: rgba(64, 82, 90, 0.452);
+    color: aquamarine;
+}
+
+/* Cards */
+.cards {
+    display: inline-block;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 100px;
+    border-radius: 5px;
+    margin-left: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adding transition */
+}
+
+/* Hover effect */
+.cards:hover {
+    background-color: rgba(20, 203, 249, 0.51); /* Change the background color on hover */
+    transform: scale(1.05); /* Scale up the card slightly on hover */
+}
+/* Circle */
+.circle {
+    clip-path: circle(50% at center);
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Align content in the center */
+}
+
+/* Image */
+.imgbox img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* Table */
+.table {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center; /* Align items in the center */
+    padding: 10px;
+}
+/* Name and Mail */
+#name1,
+#name2,
+#name3,
+#name4,
+#name5,
+#name6 {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+}
+
+#mail1,
+#mail2,
+#mail3,
+#mail4,
+#mail5,
+#mail6 {
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+}
+
+table {
+    width: 100%;
+}
